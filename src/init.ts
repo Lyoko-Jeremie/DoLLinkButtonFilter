@@ -49,7 +49,7 @@ export function patchMacro(
         logger.error(`[DoLLinkButtonFilter] patchMacro() cannot find macro [${macroKey}]`);
         return;
     }
-    const h: Function = link.OriginHandlerPassageQBalance;
+    const h: Function = link.handler;
     if (!h && !isFunction(h)) {
         console.error(`[DoLLinkButtonFilter] patchMacro() cannot find macro [${macroKey}] handle`, [macroKey, link, h]);
         logger.error(`[DoLLinkButtonFilter] patchMacro() cannot find macro [${macroKey}] handle`);
